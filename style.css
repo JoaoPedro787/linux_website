@@ -313,4 +313,30 @@ button:active {
     .why_linux h1{
         font-size: 40px;
     }
+
+    .linux_vs_windows h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .comparison_cards{
+        padding: 10px;
+    }
+
+    .socialmedia{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 388px){
+    .what_is_linux h1{
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 339px){
+    .what_is_linux h1{
+        font-size: 30px;
+    }
 }
