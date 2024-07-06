@@ -276,6 +276,14 @@ button:active {
         padding: 50px;
     }
 
+    .upgrade_cards h2{
+        font-size: 30px;
+    }
+
+    .upgrade_cards p{
+        font-size: 20px;
+    }
+
     .why_linux{
         align-items: center;
     }
@@ -316,6 +324,13 @@ button:active {
 
     .linux_vs_windows h1{
         font-size: 50px;
+    }
+    .upgrade_cards h2{
+        font-size: 24px;
+    }
+
+    .upgrade_cards p{
+        font-size: 20px;
     }
 }
 
