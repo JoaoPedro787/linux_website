@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
+}
+
+:root {
+    --color-primary:hsl(209, 100%, 42%);
+    --bg-color:hsl(225, 71%, 7%);
+    --bg-card-color:hsl(225, 62%, 12%);
+    --color-segundary:#f5fbff73
+}
+
+h1{
+    font-size: 60px;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+.blue{
+    color: var(--color-primary);
+}
+
+.cinza_escuro{
+    color: var(--color-segundary);
+}
+
+.grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.about{
+    margin-top: 30px;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.about * {
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    grid-column: 1;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.navbar{
+    grid-column: 2;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.socialmedia{
+    grid-column: 3;
+    gap: 30px;
+}
+
+.socialmedia img{
+    width: 30px;
+    height: 28px;
+}
+main{
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+main *{
+    grid-column: 2;
+}
+
+.what_is_linux{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.what_is_linux h1{
+    font-size: 64px;
+    max-width: 750px;
+}
+
+.what_is_linux p{
+    max-width: 550px;
+    
+}
+
+.what_is_linux h1,p{
+    margin-bottom: 20px;
+}
+
+.what_is_linux_container{
+    display: flex;
+    
+}
+
+.what_is_linux button{
+    font-size: 15px;
+    margin: 10px;
+    
+}
+
+.linux_wallpaper img{
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.tecnology_container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.tecnology_container img{
+    width: 90px;
+
+}
+
+.why_linux{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.upgrade{
+    display: flex;
+    align-items: flex-end;
+    gap: 100px;
+    margin-bottom: 50px;
+
+}
+
+.upgrade p{
+    max-width: 450px;
+    
+}
+
+.upgrade_container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 300px;
+}
+
+.upgrade_cards{
+    background: linear-gradient(180deg,#0c1633,#2d5ace);
+    border: 1px solid #2b57c5;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.linux_vs_windows{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.linux_vs_windows p{
+    margin-top: 20px;
+    max-width: 450px;
+   
+}
+.comparison_container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comparison_cards{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: var(--bg-card-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.comparison_cards *{
+    margin: 10px;
+}
+
+footer{
+    padding: 50px;
+    padding-bottom: 0;
+    grid-row: 3;
+    display: flex;
+    background-color: #0c1532;
+    margin-top: 200px;
+    border-top: 1px solid rgba(5,12,31,.3);
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer img{
+    width: 100px;
+}
+
+button {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+}
+  
+button:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+@media screen and (max-width: 1302px){
+    .certificate{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+
+    .upgrade{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0;
+        margin-top: 150px;
+    }
+
+    .upgrade h1{
+        margin-bottom: 20px;
+    }
+
+    .upgrade_container{
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        gap: 30px;
+
+    }
+
+    .upgrade_cards{
+        text-align: center;
+        padding: 50px;
+    }
+
+    .why_linux{
+        align-items: center;
+    }
+
+    .comparison_container{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .comparison_cards{
+        width: 100%;
+    }
+
+    .socialmedia img{
+        width: 25px;
+        height: 23px;
+    }    
+}
+
+@media screen and (max-width: 541px){
+    .what_is_linux_container{
+        flex-direction: column;
+        
+    }
+    main{
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+    
+    .what_is_linux h1{
+        font-size: 40px;
+    }
+
+    .why_linux h1{
+        font-size: 40px;
+    }
+}
